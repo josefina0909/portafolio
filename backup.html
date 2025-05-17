@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>lolbruhxd</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body id="inicio">
+
+  <header id="header">
+    <h1>Olaxdddd</h1>
+    <div class="logo">
+      <img src="img/se9b1xwi8xo81.webp" alt="gatito" />
+    </div>
+    <div class="bienvenida">
+      <h2>Bienvenido a mi página personal</h2>
+      <p>Esta es una breve descripción de mí y mis intereses.</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Categorías</a></li>
+        <li><a href="#">Acerca de nosotros</a></li>
+        <li><a href="#">Contacto</a></li>
+        <li><a href="#">Mapa</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="sobre-mi" class="container">
+      <h2>Sobre Mí</h2>
+      <p>
+        Mi nombre es emikurosiosis, soy estudiante de técnico de desarrollo de software y próximo técnico de sistemas e informática.
+        Me gusta bastante todo lo que tenga que ver con tecnología y ayudar en problemas sobre eso.
+      </p>
+    </section>
+  </main>
+
+  <div class="tungtung">
+    <img src="img/tripi-tropa.gif" alt="tripitropa" />
+  </div>
+
+  <section id="contacto" class="formulario">
+    <h2>Formulario de Contacto</h2>
+    <form action="#" method="post">
+      <input type="text" name="nombre" placeholder="Nombre" required />
+      <input type="email" name="email" placeholder="Correo Electrónico" required />
+      <textarea name="mensaje" rows="4" placeholder="Mensaje" required></textarea>
+      <input type="submit" value="Enviar" />
+    </form>
+  </section>
+
+  <div class="mapa">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1983.0654363253946!2d-75.5635013285162!3d6.246479295423838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442858283e4af9%3A0xe323531db7977b0a!2s%22CENDI%22%20Corporaci%C3%B3n%20Centro%20de%20Desarrollo%20Integrado%20Instituci%C3%B3n%20de%20Educaci%C3%B3n!5e0!3m2!1ses!2sco!4v1746221486463!5m2!1ses!2sco" 
+      width="400" height="400" 
+      style="border:0;" allowfullscreen="" 
+      loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+
+  <div class="tungtung">
+    <img src="img/Tung-Tung-Tung-Sahur-X-Rat-Dance-but-I-sing-it-to-my-Baby (1).gif" alt="tungtungsahur" />
+  </div>
+
+
+  <a href="#" class="flecha-arriba" title="Volver arriba">&#8679;</a>
+
+  <script>
+    const flecha = document.querySelector(".flecha-arriba");
+  
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        flecha.classList.add("visible");
+      } else {
+        flecha.classList.remove("visible");
+      }
+    });
+  
+ 
+    flecha.addEventListener("click", function (e) {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  </script>
+</body>
+</html>

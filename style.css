@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    background-color: rgb(187, 136, 235);
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background: rgba(236, 240, 20, 0.1); /* Amarillo muy transparente */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    color: white;
+    padding: 30px 20px;
+    border-bottom: 2px solid white;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 4px 8px rgba(235, 44, 44, 0.507);
+}
+
+header h2 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.logo img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px 0;
+  border-bottom: 2px solid white;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffcc00;
+}
+
+.bienvenida {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.bienvenida {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.tungtung img {
+  width: 200px;
+  display: block;
+  margin: 20px auto;
+}
+
+.formulario {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: #000;
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.mapa {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+#inicio {
+  background-image: url("img/descarga.jpg");
+  background-size: cover;
+  background-position: center top;
+}
+
+.flecha-arriba {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  font-size: 30px;
+  background: #000;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 50%;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+  z-index: 1000;
+}
+
+.flecha-arriba.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.flecha-arriba:hover {
+  background: #444;
+}
+
